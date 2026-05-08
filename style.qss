@@ -1,0 +1,326 @@
+QMainWindow, QDialog {
+    background-color: #0f1117;
+    color: #e2e8f0;
+    font-family: "Segoe UI", "SF Pro Display", sans-serif;
+    font-size: 13px;
+}
+
+QWidget {
+    background-color: #0f1117;
+    color: #e2e8f0;
+}
+
+/* Label */
+QLabel {
+    color: #94a3b8;
+    font-size: 12px;
+}
+
+QLabel#status_label {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 3px 3px;
+    border-radius: 6px;
+    background-color: #1e2130;
+    border: 1px solid #2d3450;
+    letter-spacing: 0.3px;
+}
+
+/* Tombol Utama */
+QPushButton {
+    background-color: #1e2130;
+    color: #cbd5e1;
+    border: 1px solid #2d3450;
+    border-radius: 8px;
+    padding: 8px 18px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+}
+
+QPushButton:hover {
+    background-color: #252a3d;
+    border-color: #4f60c0;
+    color: #e2e8f0;
+}
+
+QPushButton:pressed {
+    background-color: #1a1f30;
+    border-color: #6b7fe0;
+}
+
+QPushButton:disabled {
+    background-color: #161923;
+    color: #3d4760;
+    border-color: #1e2130;
+}
+
+/* Tombol Aksi Khusus */
+QPushButton#btn_refresh {
+    background-color: #1a2535;
+    border-color: #2a4a7f;
+    color: #7eb8f7;
+}
+QPushButton#btn_refresh:hover {
+    background-color: #1e2f47;
+    border-color: #4a80cf;
+    color: #a5d0ff;
+}
+
+QPushButton#btn_tambah {
+    background-color: #1a2e26;
+    border-color: #1e5c3a;
+    color: #4ade80;
+}
+QPushButton#btn_tambah:hover {
+    background-color: #1f3a2d;
+    border-color: #22c55e;
+    color: #86efac;
+}
+
+QPushButton#btn_edit {
+    background-color: #2a2415;
+    border-color: #5c4a10;
+    color: #fbbf24;
+}
+QPushButton#btn_edit:hover {
+    background-color: #352d18;
+    border-color: #d97706;
+    color: #fde68a;
+}
+QPushButton#btn_edit:disabled {
+    background-color: #161923;
+    color: #3d4760;
+    border-color: #1e2130;
+}
+
+QPushButton#btn_hapus {
+    background-color: #2a1515;
+    border-color: #5c1515;
+    color: #f87171;
+}
+QPushButton#btn_hapus:hover {
+    background-color: #361a1a;
+    border-color: #dc2626;
+    color: #fca5a5;
+}
+QPushButton#btn_hapus:disabled {
+    background-color: #161923;
+    color: #3d4760;
+    border-color: #1e2130;
+}
+
+/* Tabel */
+QTableWidget {
+    background-color: #12151f;
+    alternate-background-color: #161a27;
+    color: #cbd5e1;
+    border: 1px solid #1e2437;
+    border-radius: 10px;
+    gridline-color: #1a1f30;
+    selection-background-color: #2a3460;
+    selection-color: #e2e8f0;
+    font-size: 12px;
+}
+
+QTableWidget::item {
+    padding: 8px 12px;
+    border: none;
+}
+
+QTableWidget::item:selected {
+    background-color: #252d52;
+    color: #e2e8f0;
+    border-left: 3px solid #6366f1;
+}
+
+QTableWidget::item:hover {
+    background-color: #1a2040;
+}
+
+QHeaderView::section {
+    background-color: #161a27;
+    color: #7c88b0;
+    border: none;
+    border-bottom: 2px solid #6366f1;
+    padding: 10px 12px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+QHeaderView {
+    background-color: #161a27;
+}
+
+/* Scrollbar */
+QScrollBar:vertical {
+    background: #12151f;
+    width: 8px;
+    border-radius: 4px;
+}
+QScrollBar::handle:vertical {
+    background: #2d3450;
+    border-radius: 4px;
+    min-height: 30px;
+}
+QScrollBar::handle:vertical:hover {
+    background: #4f60c0;
+}
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0;
+}
+
+QScrollBar:horizontal {
+    background: #12151f;
+    height: 8px;
+    border-radius: 4px;
+}
+QScrollBar::handle:horizontal {
+    background: #2d3450;
+    border-radius: 4px;
+    min-width: 30px;
+}
+QScrollBar::handle:horizontal:hover {
+    background: #4f60c0;
+}
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+    width: 0;
+}
+
+/* Panel Detail (QTextEdit) */
+QTextEdit {
+    background-color: #12151f;
+    color: #cbd5e1;
+    border: 1px solid #1e2437;
+    border-radius: 10px;
+    padding: 14px;
+    font-size: 13px;
+    line-height: 1.6;
+    selection-background-color: #2a3460;
+}
+
+/* Splitter */
+QSplitter::handle {
+    background-color: #1e2437;
+    width: 2px;
+}
+QSplitter::handle:hover {
+    background-color: #6366f1;
+}
+
+/* Dialog */
+QDialog {
+    background-color: #0f1117;
+    border: 1px solid #1e2437;
+    border-radius: 12px;
+}
+
+/* Form di Dialog */
+QLineEdit {
+    background-color: #1a1f2e;
+    color: #e2e8f0;
+    border: 1px solid #2d3450;
+    border-radius: 7px;
+    padding: 8px 12px;
+    font-size: 13px;
+}
+QLineEdit:focus {
+    border-color: #6366f1;
+    background-color: #1e2340;
+    outline: none;
+}
+QLineEdit:hover {
+    border-color: #3d4a80;
+}
+
+QComboBox {
+    background-color: #1a1f2e;
+    color: #e2e8f0;
+    border: 1px solid #2d3450;
+    border-radius: 7px;
+    padding: 8px 12px;
+    font-size: 13px;
+}
+QComboBox:focus {
+    border-color: #6366f1;
+}
+QComboBox:hover {
+    border-color: #3d4a80;
+}
+QComboBox::drop-down {
+    border: none;
+    width: 24px;
+}
+QComboBox::down-arrow {
+    width: 10px;
+    height: 10px;
+    image: none;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid #6366f1;
+}
+QComboBox QAbstractItemView {
+    background-color: #1a1f2e;
+    border: 1px solid #2d3450;
+    border-radius: 7px;
+    color: #e2e8f0;
+    selection-background-color: #252d52;
+    padding: 4px;
+}
+
+/* Label Form */
+QFormLayout QLabel {
+    color: #7c88b0;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+/* Button Box (Dialog) */
+QDialogButtonBox QPushButton {
+    min-width: 90px;
+    padding: 9px 20px;
+}
+
+QDialogButtonBox QPushButton[text="OK"] {
+    background-color: #312e81;
+    border-color: #4f46e5;
+    color: #c7d2fe;
+    font-weight: 600;
+}
+QDialogButtonBox QPushButton[text="OK"]:hover {
+    background-color: #3730a3;
+    border-color: #6366f1;
+    color: #e0e7ff;
+}
+
+QDialogButtonBox QPushButton[text="Cancel"],
+QDialogButtonBox QPushButton[text="Batal"] {
+    background-color: #1e2130;
+    border-color: #2d3450;
+    color: #64748b;
+}
+QDialogButtonBox QPushButton[text="Cancel"]:hover,
+QDialogButtonBox QPushButton[text="Batal"]:hover {
+    background-color: #252a3d;
+    color: #94a3b8;
+}
+
+/* MessageBox */
+QMessageBox {
+    background-color: #0f1117;
+    color: #e2e8f0;
+}
+QMessageBox QLabel {
+    color: #e2e8f0;
+    font-size: 13px;
+}
+QMessageBox QPushButton {
+    min-width: 80px;
+    padding: 7px 16px;
+}
